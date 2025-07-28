@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using ProductionPlanner.DB;
 using ProductionPlanner.Services;
 using ProductionPlanner.Services.Interface;
 
@@ -7,6 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IProductionPlanService, ProductionPlanService>();
+builder.Services.AddDbContext<ProductionPlannerDbContext>(options
+    => options.UseSqlServer(builder.Configuration.GetConnectionString("AppConnectionStrings"))
+);
 
 var app = builder.Build();
 

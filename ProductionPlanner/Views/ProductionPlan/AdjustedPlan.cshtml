@@ -16,7 +16,7 @@
     @for (int i = 0; i < Model.InitialPlan.Count; i++)
     {
         <tr>
-            <td>@Enum.GetName(typeof(DayOfWeek), i)</td>
+            <td>@Enum.GetName(typeof(DayOfWeek), (i + 1) % 7)</td>
             <td>@Model.InitialPlan[i]</td>
             <td>@Model.AdjustedPlan[i]</td>
         </tr>

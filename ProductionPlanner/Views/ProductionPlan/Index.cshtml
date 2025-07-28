@@ -6,11 +6,11 @@
 }
 
 
-<h2>Input Produksi Harian (Senin–Jumat)</h2>
+<h2>Input Produksi Harian (Senin–Minggu)</h2>
 
 <form method="post" asp-action="Adjust">
     <div class="row mt-5">
-    @for (int i = 0; i < 5; i++)
+    @for (int i = 0; i < 7; i++)
     {
         <div class="col">
             <input min="0" type="number" class="form-control mb-2" name="plan" required placeholder="Hari @(i + 1)" />

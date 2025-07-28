@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+@{
+
+}
+@model List<ProductionPlanner.Models.Domain.ProductionPlanHistory>
+
+<h2>Riwayat Perbaikan Rencana Produksi</h2>
+
+<table class="table" border="1">
+    <tr>
+        <th>Waktu</th>
+        <th>Awal Rencana produksi</th>
+        <th>Perbaikan Rencana Produksi</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CreatedAt</td>
+            <td>@item.PlanningInitial</td>
+            <td>@item.PlanningAdjusted</td>
+        </tr>
+    }
+</table>

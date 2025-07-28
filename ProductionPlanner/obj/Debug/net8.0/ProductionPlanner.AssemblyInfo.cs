@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProductionPlanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+258de3e7d972ccac8d323aa5569a560302cfff32")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProductionPlanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductionPlanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
